@@ -5,10 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/carHeroImage"
         android:layout_width="match_parent"
         android:layout_height="110dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/ImageViewArredondada"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -17,12 +20,10 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@drawable/bg_rounded_car_item"
-        android:elevation="@dimen/cardview_default_elevation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/carHeroImage">
-
+        app:layout_constraintTop_toBottomOf="@+id/carHeroImage"
+        >
         <TextView
             android:id="@+id/carNameTextView"
             android:layout_width="wrap_content"
