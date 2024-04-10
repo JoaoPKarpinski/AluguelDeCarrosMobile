@@ -63,9 +63,12 @@ public class CarDetailFragment extends Fragment {
 
         ImageView imagemCarro = (ImageView) view.findViewById(R.id.carDetailImageView);
         TextView nomeCarro = (TextView) view.findViewById(R.id.carDetailNameTextView);
+        TextView detalheCarro = (TextView) view.findViewById(R.id.carDetailDescTextView);
 
         imagemCarro.setImageResource(carroParam.getImage());
         nomeCarro.setText(carroParam.getName());
+        detalheCarro.setText(carroParam.getDescricao());
+
 
 
         return view;

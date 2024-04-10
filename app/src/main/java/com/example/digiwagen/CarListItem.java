@@ -5,12 +5,15 @@ import java.io.Serializable;
 public class CarListItem implements Serializable {
     private int image;
     private String name;
+
+    private String descricao;
     private double rentPrice;
 
-    public CarListItem(int image, String name, double price) {
+    public CarListItem(int image, String name, String descricao, double price) {
         this.image = image;
         this.name = name;
         this.rentPrice = price;
+        this.descricao = descricao;
     }
 
     public int getImage() {
@@ -29,6 +32,14 @@ public class CarListItem implements Serializable {
         this.name = name;
     }
 
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
     public double getRentPrice() {
         return rentPrice;
     }
@@ -36,4 +47,6 @@ public class CarListItem implements Serializable {
     public void setRentPrice(double rentPrice) {
         this.rentPrice = rentPrice;
     }
+
+
 }

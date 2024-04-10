@@ -31,14 +31,7 @@ public class HomePageFragment extends Fragment {
         binding = FragmentHomepageBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        List<CarListItem> carListItems = new ArrayList<>();
-
-        carListItems.add(new CarListItem(R.drawable.carro_lamborgini, "Lamborgini A32", 230.50));
-        carListItems.add(new CarListItem(R.drawable.carro_jipe, "Jipe S20", 10.50));
-        carListItems.add(new CarListItem(R.drawable.carro_coupe, "Coupet Special Lorenzetti", 10000.10));
-        carListItems.add(new CarListItem(R.drawable.carro_audi_suv, "Audi SUV-X", 730.50));
-        carListItems.add(new CarListItem(R.drawable.carro_mercedes_sport, "Mercedes Fly-Sport", 8720.10));
-        carListItems.add(new CarListItem(R.drawable.carro_audi_rio, "Audi Rio Edition", 700.00));
+        List<CarListItem> carListItems = CarMockBuilder.build();
 
         binding.carsListView.setAdapter(new AdaptadorCarList(getContext(), carListItems));
 
