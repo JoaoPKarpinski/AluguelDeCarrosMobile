@@ -6,17 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".HomePageFragment">
 
-        <Button
-            android:id="@+id/button_first"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/next"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/carsListView" />
-
         <TextView
             android:id="@+id/homePageTitleTextView"
             android:layout_width="wrap_content"
@@ -47,6 +36,9 @@
             android:dividerHeight="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/homePageSubTitleTextView" />
+            app:layout_constraintTop_toBottomOf="@+id/homePageSubTitleTextView"
+            android:scrollbars="none"
+            android:paddingHorizontal="10dp"
+            android:paddingBottom="25dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
