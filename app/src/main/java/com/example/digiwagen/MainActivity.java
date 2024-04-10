@@ -10,6 +10,7 @@ import android.view.View;
 
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
+import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
@@ -63,6 +64,10 @@ public class MainActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
+        }
+        else if (id == R.id.action_second_frame){
+            Navigation.findNavController(this, R.id.nav_host_fragment_content_main)
+                    .navigate(R.id.action_FirstFragment_to_SecondFragment);
         }
 
         return super.onOptionsItemSelected(item);
