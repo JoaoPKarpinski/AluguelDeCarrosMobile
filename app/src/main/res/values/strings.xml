@@ -4,7 +4,7 @@
     <string name="action_settings">Configurações</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">Home</string>
-    <string name="second_fragment_label">Second Fragment</string>
+    <string name="second_fragment_label">Ajuda</string>
     <string name="car_detail_fragment_label">Sobre o carro</string>
     <string name="next">Próximo</string>
     <string name="previous">Anterior</string>
@@ -46,6 +46,34 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+
+    <string-array name="ajudas">
+        <item>
+            Aqui você encontrará apoio e esclarecimento para uso do app,
+            no caso de algo ter ficado confuso :).
+        </item>
+        <item>
+            Até o momento, a plataforma aceita apenas pagamentos via PIX,
+            mas estamos em constante evolução para alcançar o máximo de
+            formas de pagamento online possíveis para melhor te atender!
+        </item>
+        <item>
+            Nosso seguro garante o conserto do carro no caso de um eventual
+            acidente, como garante, também, as despesas médicas do condutor.
+            No caso de ser necessário reparo em veículos de terceiros, o
+            custo fica a cargo do consumidor.
+        </item>
+        <item>
+            Você pode contratar os nossos serviços diretamente aqui no app,
+            mas também existe a opção de contratação presencial, em uma de nossas distribuidoras.
+        </item>
+    </string-array>
+
+    <string-array name="opcoes_spinner">
+        <item>Quais pagamentos são aceitos pela plataforma?</item>
+        <item>O que acontece em caso de acidente?</item>
+        <item>Como posso alugar um carro?</item>
+    </string-array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
