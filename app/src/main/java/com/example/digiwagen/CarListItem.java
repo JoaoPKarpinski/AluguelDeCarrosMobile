@@ -1,6 +1,8 @@
 package com.example.digiwagen;
 
-public class CarListItem {
+import java.io.Serializable;
+
+public class CarListItem implements Serializable {
     private int image;
     private String name;
     private double rentPrice;
