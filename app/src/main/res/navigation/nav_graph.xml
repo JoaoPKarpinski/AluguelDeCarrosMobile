@@ -14,6 +14,9 @@
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_CarDetailFragment"
+            app:destination="@id/CarDetailGragment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -24,5 +27,15 @@
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/CarDetailGragment"
+        android:name="com.example.digiwagen.CarDetailFragment"
+        android:label="@string/car_detail_fragment_label"
+        tools:layout="@layout/fragment_car_detail">
+        <action
+            android:id="@+id/action_CarDetailFragment_to_FirstFragment"
+            app:destination="@+id/FirstFragment"/>
     </fragment>
 </navigation>

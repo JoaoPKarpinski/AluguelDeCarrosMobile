@@ -3,7 +3,26 @@
     <style name="Base.Theme.DigiWagen" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
     </style>
 
+
     <style name="Theme.DigiWagen" parent="Base.Theme.DigiWagen" />
+
+    <style name="ImageViewArredondadaTop" parent="">
+        <item name="cornerFamilyTopLeft">rounded</item>
+        <item name="cornerSizeTopLeft">10dp</item>
+
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerSizeTopRight">10dp</item>
+    </style>
+
+    <style name="ImageViewArredondadaBottom" parent="">
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerSizeBottomLeft">10dp</item>
+
+        <item name="cornerFamilyBottomRight">rounded</item>
+        <item name="cornerSizeBottomRight">10dp</item>
+    </style>
+
 </resources>
